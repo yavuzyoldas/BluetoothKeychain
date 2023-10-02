@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<item
+    android:id="@+id/moreVertical"
+    app:showAsAction="ifRoom"
+    android:icon="@drawable/ic_settings_bluetooth_black_24dp"
+    android:title="options">
+    <menu>
+        <item
+            android:id="@+id/item1"
+            android:icon="@drawable/ic_bluetooth_black_24dp"
+            app:showAsAction="ifRoom"
+            android:title="Bağlan" />
+        <item
+            android:icon="@drawable/ic_bluetooth_disabled_black_24dp"
+            android:id="@+id/item2"
+            app:showAsAction="ifRoom"
+            android:title="Bağlantıyı Kes" />
+        <item
+            android:icon="@drawable/ic_bluetooth_searching_black_24dp"
+            android:id="@+id/item3"
+            app:showAsAction="ifRoom"
+            android:title="Eşleştirme" />
+    </menu>
+</item>
+</menu>

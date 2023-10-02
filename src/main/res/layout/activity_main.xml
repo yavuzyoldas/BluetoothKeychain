@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/colorBlue"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:textStyle="italic"
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="SES KONTROL"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp"
+                android:background="@drawable/round_button"
+                />
+            <LinearLayout
+                android:background="@drawable/round_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp">
+                <Button
+                    android:background="@drawable/custom_bg"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="AÇIK"
+                    android:id="@+id/button2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/round_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp">
+                <Button
+                    android:background="@drawable/custom_bg"
+                    android:layout_gravity="center"
+                    android:layout_width="150dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_height="wrap_content"
+                    android:text="KAPALI"
+                    android:id="@+id/button3"
+                    android:layout_below="@+id/button2"
+                    />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:elevation="2dp"
+                android:layout_weight="1"
+                android:scrollbars="vertical"
+                android:orientation="vertical"
+                android:id="@+id/recycler_view">
+            </androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:textStyle="italic"
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Uygulamayı kullanabilmek için öncelikle sağ üst köşeden Bluetooth ayarını yapın.Eşleştirme işlemi mutlaka 1 kez yapılmalıdır."
+                android:textColor="@color/colorWhite"
+                android:textSize="10dp"
+                android:background="@drawable/round_button"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
